@@ -1,0 +1,96 @@
+/*
+D13 PS4 Gamepad Viewer Skin V2
+This version places the D13 logo directly on the DualShock 4 touchpad.
+Repository name must be: d13-ps4-gamepad-skin-v2
+*/
+
+html, body {
+  background: transparent !important;
+  overflow: hidden !important;
+}
+
+/* Controller shell */
+.controller.ds4 {
+  filter:
+    drop-shadow(0 0 6px rgba(0,234,255,.95))
+    drop-shadow(0 0 15px rgba(0,234,255,.55))
+    drop-shadow(0 12px 18px rgba(0,0,0,.9)) !important;
+}
+
+/* Dark rugged body */
+.controller.ds4 .body {
+  filter: brightness(.38) contrast(1.55) saturate(.45) !important;
+}
+
+/* D13 LOGO — placed directly on the touchpad */
+.controller.ds4 .touchpad {
+  background-image:
+    linear-gradient(rgba(0,0,0,.05), rgba(0,0,0,.16)),
+    url("https://DistrictD13Gaming.github.io/d13-ps4-gamepad-skin-v2/d13-logo.jpg") !important;
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  border: 3px solid #00eaff !important;
+  border-radius: 14px !important;
+  box-shadow:
+    0 0 0 2px #080808,
+    0 0 10px #00eaff,
+    0 0 17px rgba(255,157,0,.85),
+    inset 0 0 12px rgba(0,0,0,.45) !important;
+  opacity: 1 !important;
+}
+
+/* Make sure touchpad sprite does not cover the custom logo */
+.controller.ds4 .touchpad.pressed {
+  background-image:
+    linear-gradient(rgba(255,157,0,.18), rgba(0,0,0,.08)),
+    url("https://DistrictD13Gaming.github.io/d13-ps4-gamepad-skin-v2/d13-logo.jpg") !important;
+  background-size: cover !important;
+  background-position: center center !important;
+  filter: brightness(1.18) saturate(1.18) !important;
+}
+
+/* Cyan resting highlights */
+.controller.ds4 .button,
+.controller.ds4 .face,
+.controller.ds4 .stick,
+.controller.ds4 .bumper,
+.controller.ds4 .trigger-button,
+.controller.ds4 .back,
+.controller.ds4 .start,
+.controller.ds4 .meta {
+  filter:
+    brightness(.72)
+    contrast(1.38)
+    drop-shadow(0 0 4px rgba(0,234,255,.95)) !important;
+}
+
+/* Orange pressed highlights */
+.controller.ds4 .button.pressed,
+.controller.ds4 .face.pressed,
+.controller.ds4 .stick.pressed,
+.controller.ds4 .bumper.pressed,
+.controller.ds4 .trigger-button.pressed,
+.controller.ds4 .back.pressed,
+.controller.ds4 .start.pressed,
+.controller.ds4 .meta.pressed {
+  filter:
+    brightness(1.35)
+    sepia(.65)
+    saturate(4)
+    hue-rotate(340deg)
+    drop-shadow(0 0 9px #ff9d00) !important;
+}
+
+.controller.ds4 .trigger {
+  filter:
+    sepia(.35)
+    saturate(2.8)
+    hue-rotate(340deg)
+    drop-shadow(0 0 7px #ff9d00) !important;
+}
+
+.controller.ds4.disconnected {
+  opacity: .45 !important;
+  filter: grayscale(1) drop-shadow(0 0 8px #ff3b30) !important;
+}
