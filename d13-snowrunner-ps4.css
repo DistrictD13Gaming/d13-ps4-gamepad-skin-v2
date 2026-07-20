@@ -1,0 +1,128 @@
+
+html, body {
+  margin: 0 !important;
+  overflow: hidden !important;
+  background: transparent !important;
+}
+
+.controller.ds4 {
+  width: 806px !important;
+  height: 598px !important;
+  background: url("d13-snowrunner-ps4-base.png") center/contain no-repeat !important;
+  filter: drop-shadow(0 8px 14px rgba(0,0,0,.85));
+}
+
+/* Keep the controller artwork visible but remove the stock DS4 graphics. */
+.ds4 .trigger, .ds4 .bumper, .ds4 .back, .ds4 .start,
+.ds4 .touchpad, .ds4 .button, .ds4 .face, .ds4 .stick {
+  background-image: none !important;
+  background-color: transparent !important;
+}
+
+/* Input glow */
+.ds4 .trigger.pressed, .ds4 .bumper.pressed,
+.ds4 .back.pressed, .ds4 .start.pressed,
+.ds4 .touchpad.pressed, .ds4 .button.pressed,
+.ds4 .face.pressed, .ds4 .stick.pressed {
+  background: rgba(255,139,18,.35) !important;
+  border: 3px solid rgba(255,180,70,.95) !important;
+  box-sizing: border-box !important;
+  filter: drop-shadow(0 0 9px #ff8b12) brightness(1.25);
+}
+
+/* Touchpad */
+.ds4 .touchpad {
+  position: absolute !important;
+  left: 253px !important;
+  top: 112px !important;
+  width: 300px !important;
+  height: 154px !important;
+  border-radius: 10px !important;
+}
+
+/* L2 / R2 */
+.ds4 .triggers { position:absolute !important; inset:0 !important; }
+.ds4 .trigger {
+  position:absolute !important;
+  top:13px !important;
+  width:105px !important;
+  height:73px !important;
+  border-radius:45% !important;
+}
+.ds4 .trigger.left { left:112px !important; }
+.ds4 .trigger.right { right:112px !important; }
+
+/* L1 / R1 */
+.ds4 .bumpers { position:absolute !important; inset:0 !important; }
+.ds4 .bumper {
+  position:absolute !important;
+  top:89px !important;
+  width:124px !important;
+  height:39px !important;
+  border-radius:18px !important;
+}
+.ds4 .bumper.left { left:111px !important; }
+.ds4 .bumper.right { right:111px !important; }
+
+/* Share / Options */
+.ds4 .back, .ds4 .start {
+  position:absolute !important;
+  top:143px !important;
+  width:28px !important;
+  height:57px !important;
+  border-radius:12px !important;
+}
+.ds4 .back { left:222px !important; }
+.ds4 .start { right:222px !important; }
+
+/* D-pad */
+.ds4 .arrows {
+  position:absolute !important;
+  left:74px !important;
+  top:160px !important;
+  width:182px !important;
+  height:182px !important;
+}
+.ds4 .face {
+  position:absolute !important;
+  width:59px !important;
+  height:59px !important;
+  border-radius:13px !important;
+}
+.ds4 .face.up { left:61px !important; top:0 !important; }
+.ds4 .face.down { left:61px !important; bottom:0 !important; }
+.ds4 .face.left { left:0 !important; top:61px !important; }
+.ds4 .face.right { right:0 !important; top:61px !important; }
+
+/* Face buttons */
+.ds4 .abxy {
+  position:absolute !important;
+  right:65px !important;
+  top:147px !important;
+  width:190px !important;
+  height:190px !important;
+}
+.ds4 .button {
+  position:absolute !important;
+  width:62px !important;
+  height:62px !important;
+  border-radius:50% !important;
+}
+.ds4 .button.y { left:64px !important; top:0 !important; }
+.ds4 .button.a { left:64px !important; bottom:0 !important; }
+.ds4 .button.x { left:0 !important; top:64px !important; }
+.ds4 .button.b { right:0 !important; top:64px !important; }
+
+/* Analog sticks */
+.ds4 .sticks { position:absolute !important; inset:0 !important; }
+.ds4 .stick {
+  position:absolute !important;
+  top:338px !important;
+  width:112px !important;
+  height:112px !important;
+  border-radius:50% !important;
+}
+.ds4 .stick.left { left:225px !important; }
+.ds4 .stick.right { right:225px !important; }
+
+.ds4.disconnected { opacity:0 !important; }
