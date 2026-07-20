@@ -1,0 +1,24 @@
+
+html,body{margin:0!important;padding:0!important;overflow:hidden!important;background:transparent!important}
+.controller.ds4{position:relative!important;width:806px!important;height:598px!important;background:url("d13-snowrunner-ps4-base.png") center/806px 598px no-repeat!important;filter:drop-shadow(0 8px 14px rgba(0,0,0,.85))}
+.ds4 .trigger,.ds4 .bumper,.ds4 .back,.ds4 .start,.ds4 .touchpad,.ds4 .button,.ds4 .face,.ds4 .stick{background-image:none!important;background-color:transparent!important;box-shadow:none!important}
+.ds4 .trigger.pressed,.ds4 .bumper.pressed,.ds4 .back.pressed,.ds4 .start.pressed,.ds4 .touchpad.pressed,.ds4 .button.pressed,.ds4 .face.pressed,.ds4 .stick.pressed{background:rgba(255,128,0,.32)!important;border:3px solid rgba(255,180,65,.98)!important;box-sizing:border-box!important;filter:drop-shadow(0 0 10px #ff8a00) brightness(1.3)}
+.ds4 .triggers,.ds4 .bumpers,.ds4 .sticks{position:absolute!important;inset:0!important}
+.ds4 .trigger{position:absolute!important;top:28px!important;width:93px!important;height:82px!important;border-radius:46% 46% 28% 28%!important}
+.ds4 .trigger.left{left:154px!important}.ds4 .trigger.right{right:154px!important}
+.ds4 .bumper{position:absolute!important;top:104px!important;width:112px!important;height:35px!important;border-radius:16px!important}
+.ds4 .bumper.left{left:145px!important}.ds4 .bumper.right{right:145px!important}
+.ds4 .back,.ds4 .start{position:absolute!important;top:136px!important;width:31px!important;height:48px!important;border-radius:10px!important}
+.ds4 .back{left:254px!important}.ds4 .start{right:254px!important}
+.ds4 .touchpad{position:absolute!important;left:273px!important;top:154px!important;width:258px!important;height:151px!important;border-radius:9px!important}
+.ds4 .arrows{position:absolute!important;left:91px!important;top:173px!important;width:176px!important;height:176px!important}
+.ds4 .face{position:absolute!important;width:58px!important;height:58px!important;border-radius:13px!important}
+.ds4 .face.up{left:59px!important;top:0!important}.ds4 .face.down{left:59px!important;bottom:0!important}.ds4 .face.left{left:0!important;top:59px!important}.ds4 .face.right{right:0!important;top:59px!important}
+.ds4 .abxy{position:absolute!important;left:574px!important;top:176px!important;width:154px!important;height:154px!important}
+.ds4 .button{position:absolute!important;width:55px!important;height:55px!important;border-radius:50%!important}
+.ds4 .button.y{left:50px!important;top:0!important}.ds4 .button.a{left:50px!important;bottom:0!important}.ds4 .button.x{left:0!important;top:50px!important}.ds4 .button.b{right:0!important;top:50px!important}
+.ds4 .stick{position:absolute!important;top:326px!important;width:103px!important;height:103px!important;border-radius:50%!important;background:transparent!important}
+.ds4 .stick.left{left:216px!important}.ds4 .stick.right{left:488px!important}
+.ds4 .meta{position:absolute!important;left:374px!important;top:359px!important;width:58px!important;height:58px!important}
+.ds4 .meta.pressed{background:rgba(255,128,0,.32)!important;border:3px solid rgba(255,180,65,.98)!important;border-radius:50%!important;box-sizing:border-box!important;filter:drop-shadow(0 0 10px #ff8a00) brightness(1.3)}
+.ds4.disconnected{opacity:0!important}
